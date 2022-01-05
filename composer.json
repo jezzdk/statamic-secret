@@ -1,0 +1,26 @@
+{
+    "name": "jezzdk/statamic-secret",
+    "autoload": {
+        "psr-4": {
+            "Jezzdk\\StatamicSecret\\": "src"
+        }
+    },
+    "extra": {
+        "statamic": {
+            "name": "Statamic Secret",
+            "description": "Statamic Secret addon",
+            "editions": [
+                "free",
+                "pro"
+            ]
+        },
+        "laravel": {
+            "providers": [
+                "Jezzdk\\StatamicSecret\\ServiceProvider"
+            ]
+        }
+    },
+    "require": {
+        "phpseclib/phpseclib": "~2.0"
+    }
+}
