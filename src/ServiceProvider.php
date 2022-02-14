@@ -33,8 +33,6 @@ class ServiceProvider extends AddonServiceProvider
 
     public function bootAddon()
     {
-        Statamic::afterInstalled(function ($command) {
-            $command->call('secret:generate');
-        });
+        //
     }
 }

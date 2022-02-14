@@ -42,11 +42,13 @@ php artisan vendor:publish --tag=statamic-secret-config
 
 ## How to Use
 
-When installing the addon, the keys should automatically be generated for you. If not, or if you want to re-generate them for any reason, simply run the following command:
+After installing the addon, you can generate the keys with the command below. You can use the same command to re-generate them for any reason:
 
 ```
 php please secret:generate
 ```
+
+You will be prompted to overwrite the keys if files with the configured names already exist.
 
 > You should NOT commit the keys to version control. Nor should you place them anywhere publicly accessible.
 
